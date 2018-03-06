@@ -1,6 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
-import HomePageLayout from './components/HomePageLayout';
+import Header from './components/header';
+// import HomePageLayout from './components/homepagelayout';
+import Main from './components/main'
 
-ReactDOM.render(<HomePageLayout />, document.getElementById('root'));
+render((
+    <BrowserRouter>
+    <div>
+        <Header />
+        <Main />
+    </div>
+    </BrowserRouter>
+  ), document.getElementById('root'));

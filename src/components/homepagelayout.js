@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import StaticBlocks from './StaticBlocks'
 import ResponsiveLayout, { layoutSizesEnum } from './responsivelayout'
 import styled from 'styled-components'
 
@@ -33,11 +32,10 @@ const Midbox = styled.div`
 `
 
 const Desktop = styled.section`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   left:0;
-  top:0;
   ${Box1} {
     height: 100%;
     width: 20%;
@@ -63,11 +61,10 @@ const Rightbox = styled.div`
 `
 
 const Tablet = styled.section`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   left:0;
-  top:0;
   ${Box1} {
     height: 100%;
     width: 30%;
@@ -85,11 +82,10 @@ const Tablet = styled.section`
 `
 
 const Mobile = styled.section`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   left:0;
-  top:0;
   ${Box1} {
     height: 80px;
   }
